@@ -6,7 +6,7 @@ RUN apt-get update && apt-get install -y nginx nginx-extras curl git
 
 RUN curl -sL https://deb.nodesource.com/setup_6.x | bash -
 
-RUN apt-get install nodejs
+RUN apt-get install -y nodejs
 
 RUN npm install -g bower && npm install -g gulp
 
