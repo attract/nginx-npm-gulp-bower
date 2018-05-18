@@ -2,7 +2,7 @@ FROM nginx:stable
 
 MAINTAINER AttractGroup
 
-RUN apt-get update && apt-get install -y curl wget git net-tools vim  less screen 
+RUN apt-get update && apt-get install -y curl wget git net-tools vim  less screen gnupg gnupg2 apt-transport-https 
 
 RUN curl -sL https://deb.nodesource.com/setup_8.x | bash -
 
