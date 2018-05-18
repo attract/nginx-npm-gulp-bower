@@ -2,7 +2,7 @@ FROM nginx:stable
 
 MAINTAINER AttractGroup
 
-RUN apt-get update && apt-get install  curl git
+RUN apt-get update && apt-get install -y curl git
 
 RUN curl -sL https://deb.nodesource.com/setup_7.x | bash -
 
