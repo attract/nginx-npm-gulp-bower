@@ -1,8 +1,8 @@
-FROM debian:latest
+FROM nginx:stable
 
 MAINTAINER AttractGroup
 
-RUN apt-get update && apt-get install -y nginx nginx-extras curl git
+RUN apt-get update && apt-get install  curl git
 
 RUN curl -sL https://deb.nodesource.com/setup_7.x | bash -
 
